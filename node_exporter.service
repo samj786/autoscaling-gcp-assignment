@@ -1,0 +1,10 @@
+[Unit]
+Description=Node Exporter
+After=network.target
+
+[Service]
+User=ubuntu
+ExecStart=/home/ubuntu/node_exporter/node_exporter
+
+[Install]
+WantedBy=default.target
